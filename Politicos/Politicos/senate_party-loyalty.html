@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="pro-congress-113-senate.js"></script>
+    <!-- <script src="main.js"></script> -->
+</head>
+
+<body>
+    <div class="d-flex justify-content-center">
+        <div style="width: 85rem;">
+            <div>
+                <div class="logo">
+                    <a href="#"> <img src="logo.png" class="rounded mx-auto d-block" alt="..."></a>
+                </div>
+
+                <div class="container d-flex p-1 d-flex justify-content-end">
+                    <div class="d-flex justify-content-end">
+                        <a href="#"> <img src="email.png" class="rounded mx-auto d-block email" alt="..."></a>
+                        <p class="email2">info@tgif.net</p>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <ul class="nav nav-tabs ml-5">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Congress 113</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="house.html">House</a>
+                            <a class="dropdown-item" href="senate.html">Senate</a>
+                        </div>
+                    </li>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Attendance</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="house_attendance.html">House</a>
+                            <a class="dropdown-item" href="senate_attendance.html">Senate</a>
+                        </div>
+                    </li>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Party Loyalty</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="house_party-loyalty.html">House</a>
+                            <a class="dropdown-item" href="senate_party-loyalty.html">Senate</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <header>
+                <div>
+                </div>
+            </header>
+            <!--Table container-->
+            <div class="row mt-5">
+                <div class="col-7">
+                    <h2 class="mt-5">Party Loyalty</h2>
+                    <p class="justify" >Those who consider themselves to be strong partisans, strong Democrats and strong Republicans respectively, tend to be the most faithful in voting for their party's nominee for office and legislation that backs their party's agenda. </p>
+                </div>
+                <div class="col-5 mt-5">
+                    <h2 class="senate">Senate at a glance</h2>
+                    <table class="table table-hover text-center">
+                        <thead>
+                            <tr>
+                                <th>Party</th>
+                                <th>Number of Reps</th>
+                                <th>% Voted with Party</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabla1">
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <h2 class="tabla2">Least Engaged (Bottom 10% Attendance)</h2>
+                        <table class="table table-hover text-center">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Number of Missed Votes</th>
+                                    <th>% Missed</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tabla2">
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-6">
+                        <h2 class="titulo3">Most Engaged (Top 10% Attendance)</h2>
+                        <table class="table table-hover text-center tabla3 mr-5" class="tabla1">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Number of Missed Votes</th>
+                                    <th>% Missed</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tabla3">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card text-center">
+                <div class="card-header">
+                </div>
+                <div class="card-body">
+                    <p class="card-text"> © 2016 TGIF | All Rights Reserved</p>
+                </div>
+                <div class="card-footer text-muted">
+                </div>
+            </div>
+
+            <script src="pro-congress-113-senate.js"></script>
+            <script src="statistics.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>
